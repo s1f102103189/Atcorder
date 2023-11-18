@@ -52,3 +52,17 @@ else:
     # 最大値を除いた残りのリストから最大値を求める
     A.remove(max_num)
     print(max(A))
+
+###############################################
+N = int(input())
+A = list(map(int, input().split()))
+
+# 最大値のインデックスを見つける
+max_index = A.index(max(A))
+max_num = A.pop(max_index) 
+
+if max_num in A:
+    max_pop = [i for i in A if i != max_num]
+    print(max(max_pop))
+else:
+    print(max(A))
