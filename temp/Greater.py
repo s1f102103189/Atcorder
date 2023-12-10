@@ -12,4 +12,3 @@ def sum_larger_elements(N, A):
 
 result = sum_larger_elements(N, A)
 print(result)
-
